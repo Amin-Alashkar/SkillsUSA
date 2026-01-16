@@ -1,42 +1,36 @@
-diff --git a/README.md b/README.md
-index eabbd4d840eb39100897a190e6dfe141572e5d3f..797f8b3e4f5208a961ab05a72a458b0478196329 100644
---- a/README.md
-+++ b/README.md
-@@ -1 +1,35 @@
--# SkillsUSA
-\ No newline at end of file
-+# SkillsUSA Pennsylvania (Redesign)
-+
-+## Overview
-+A modernized, mobile-first redesign of the SkillsUSA Pennsylvania website with a clean UI, improved navigation, and front-end-only demo flows. The project includes the Home page, Login, Create Account, and a redesigned District Signup form.
-+
-+### Content & Layout Mapping
-+- **Primary sections preserved:** Deadlines/Calendar, Downloads, State Officers, State Initiative, State Director.
-+- **Events and programs:** Fall Leadership, Membership, Districts.
-+- **State Conference:** Countdown module and conference CTA.
-+
-+## Pages
-+- `index.html` – Home
-+- `login.html` – Login demo
-+- `create-account.html` – Create account demo
-+- `district-signup.html` – District signup (multi-step form)
-+
-+## Run Locally
-+Because this is a static project, any simple file server works.
-+
-+```bash
-+python -m http.server 8080
-+```
-+
-+Then open `http://localhost:8080` in your browser.
-+
-+## Mocked Functionality
-+All flows are front-end only using `localStorage`:
-+- **Create Account:** stores a demo user record.
-+- **Login:** validates against the stored demo user.
-+- **District Signup:** stores submitted district data and shows a success state.
-+
-+## Design Notes
-+- Softened SkillsUSA red as the primary brand color.
-+- Reusable components for buttons, cards, inputs, alerts, navbar, and footer.
-+- Accessible focus states, labels, and responsive layouts optimized for mobile-first usage.
+# SkillsUSA Pennsylvania (Redesign)
+
+## Overview
+A modernized, mobile-first redesign of the SkillsUSA Pennsylvania website with a clean UI, improved navigation, and front-end-only demo flows. The project includes the Home page, Login, Create Account, and a redesigned District Signup form.
+
+### Content & Layout Mapping
+- **Primary sections preserved:** Deadlines/Calendar, Downloads, State Officers, State Initiative, State Director.
+- **Events and programs:** Fall Leadership, Membership, Districts.
+- **State Conference:** Countdown module and conference CTA.
+
+## Pages
+- `index.html` – Home
+- `login.html` – Login demo
+- `create-account.html` – Create account demo
+- `district-signup.html` – District signup (multi-step form)
+
+## Run Locally
+Because this is a static project, any simple file server works.
+
+```bash
+python -m http.server 8080
+```
+
+Then open `http://localhost:8080` in your browser.
+
+## Mocked Functionality
+All flows are front-end only using `localStorage`:
+- **Create Account:** stores a demo user record.
+- **Login:** validates against the stored demo user.
+- **District Signup:** stores submitted district data and shows a success state.
+
+## Design Notes
+- Softened SkillsUSA red as the primary brand color.
+- Reusable components for buttons, cards, inputs, alerts, navbar, and footer.
+- Accessible focus states, labels, and responsive layouts optimized for mobile-first usage.
+assets/css/styl
