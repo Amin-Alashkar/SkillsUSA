@@ -7,10 +7,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <header class="site-header">
+    <div class="utility-bar">
+      <div class="container">
+        <div class="utility-links">
+          <a href="https://www.skillsusapa.org/alerts" target="_blank" rel="noreferrer">Alerts</a>
+          <a href="https://www.skillsusapa.org/gold-shield-mentor" target="_blank" rel="noreferrer">Our Partners</a>
+          <a href="http://skillsusa-utah.org/?state_id=20" target="_blank" rel="noreferrer">State Sign In</a>
+          <a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District Sign In</a>
+        </div>
+        <div class="utility-links">
+          <a href="https://www.instagram.com/teampaskillsusa" target="_blank" rel="noreferrer">teampaskillsusa</a>
+        </div>
+      </div>
+    </div>
     <nav class="navbar" aria-label="Primary">
       <a class="brand" href="index.html">
         <img src="https://static.wixstatic.com/media/6a1a55_6a632ed852fa4c26a10519b89293c35c%7Emv2.jpg/v1/fill/w_96,h_96,lg_1,usm_0.66_1.00_0.01/6a1a55_6a632ed852fa4c26a10519b89293c35c%7Emv2.jpg" alt="SkillsUSA Pennsylvania logo" />
@@ -27,9 +40,17 @@
       </button>
       <div class="nav-links" id="primary-menu">
         <a class="is-active" href="index.html">Home</a>
+        <a href="#deadlines">Deadlines/Calendar</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#state-officers">State Officers</a>
+        <a href="#state-initiative">State Initiative</a>
+        <a href="#state-director">State Director</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#site-directory">More</a>
+        <a class="button button-outline" href="district-signup.html">District Signup</a>
         <a href="login.html">Login</a>
         <a href="create-account.html">Create Account</a>
-        <a class="button button-outline" href="district-signup.html">District Signup</a>
       </div>
     </nav>
   </header>
@@ -63,38 +84,16 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="alerts">
       <div class="container">
         <div class="section-title">
-          <h2>Quick Links</h2>
-          <p>Keep the essentials right at your fingertips.</p>
+          <h2>Alerts</h2>
+          <p>Stay updated with the latest advisories and announcements.</p>
         </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Deadlines / Calendar</h3>
-            <p>Stay on top of conference dates, submissions, and travel timelines.</p>
-            <a href="#" class="text-link">View calendar</a>
-          </article>
-          <article class="card">
-            <h3>Downloads</h3>
-            <p>Grab forms, templates, and advisor resources in one place.</p>
-            <a href="#" class="text-link">Open downloads</a>
-          </article>
-          <article class="card">
-            <h3>State Officers</h3>
-            <p>Meet the student leaders guiding SkillsUSA Pennsylvania this year.</p>
-            <a href="#" class="text-link">See the team</a>
-          </article>
-          <article class="card">
-            <h3>State Initiative</h3>
-            <p>Discover the statewide focus and service initiatives for this season.</p>
-            <a href="#" class="text-link">Learn more</a>
-          </article>
-          <article class="card">
-            <h3>State Director</h3>
-            <p>Connect with the SkillsUSA PA leadership and support staff.</p>
-            <a href="#" class="text-link">Contact us</a>
-          </article>
+        <div class="card">
+          <h3>Alerts</h3>
+          <p>Review current SkillsUSA PA alerts and time-sensitive notices.</p>
+          <a class="text-link" href="https://www.skillsusapa.org/alerts" target="_blank" rel="noreferrer">View alerts</a>
         </div>
       </div>
     </section>
@@ -103,9 +102,10 @@
       <div class="container">
         <div class="spotlight-grid">
           <div>
-            <h2>Countdown to our State Conference</h2>
-            <p>Celebrate student achievement and career readiness at the annual SkillsUSA PA State Conference.</p>
-            <div class="countdown" data-countdown="2026-03-12T08:00:00">
+            <span class="tag">State Conference</span>
+            <h2>Count down to our State Conference</h2>
+            <p>in Hershey, PA April 8-10, 2026</p>
+            <div class="countdown" data-countdown="2026-04-08T08:00:00">
               <div>
                 <strong data-days>--</strong>
                 <span>Days</span>
@@ -129,28 +129,320 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="mission">
       <div class="container">
         <div class="section-title">
-          <h2>Programs and Events</h2>
-          <p>From fall leadership to national competitions, explore the pathways for every student.</p>
+          <h2>Our Mission</h2>
+          <p>SkillsUSA is America's proud champion of the skilled trades.</p>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-icon">🎯</div>
-            <h3>Fall Leadership</h3>
-            <p>Kick off the year with regional leadership experiences and advisor training.</p>
+        <p class="lead">Our mission is to empower students to become skilled professionals, career-ready leaders and responsible community members.</p>
+      </div>
+    </section>
+
+    <section class="section" id="partners">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Partners</h2>
+          <p>Celebrating the organizations that support SkillsUSA Pennsylvania.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Our Platinum Level Partners</h3>
+            <p>2023-2024 Partner of the Year</p>
+            <p><strong>Local 143</strong></p>
+            <a class="text-link" href="https://www.skillsusapa.org/partnership-levels" target="_blank" rel="noreferrer">Partnership levels</a>
           </article>
-          <article class="feature-card">
-            <div class="feature-icon">🧭</div>
+          <article class="card">
+            <h3>Our Gold Level Partners</h3>
+            <p>2022-2023 Partner of the year</p>
+            <p><strong>VOLVO Construction Equipment</strong></p>
+            <p>Partner of the Year 2024-2025</p>
+            <a class="text-link" href="https://www.skillsusapa.org/partnership-levels" target="_blank" rel="noreferrer">Explore partners</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="deadlines">
+      <div class="container">
+        <div class="section-title">
+          <h2>Deadlines/Calendar</h2>
+          <p>Calendar Below</p>
+        </div>
+        <div class="card">
+          <p>Upcoming deadlines, submissions, and event milestones will be listed here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="downloads">
+      <div class="container">
+        <div class="section-title">
+          <h2>Downloads</h2>
+          <p>Links will be available with updates prior to events. Contact the State Director if you need copies sooner.</p>
+        </div>
+        <div class="details-list">
+          <details>
+            <summary>Applications &amp; Awards</summary>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_17b9cd6e433a4158ac33136c1a11d1d6.pdf" target="_blank" rel="noreferrer">2026 Administrator of the Year Award</a></li>
+              <li>2025 Alumni Award</li>
+              <li>2026 NEW Region and State Advisor of the Year Award Application</li>
+              <li><a href="https://www.skillsusapa.org/gold-shield-mentor" target="_blank" rel="noreferrer">Gold Shield Mentor</a></li>
+              <li>2026 Student of the Year Award Application</li>
+            </ul>
+          </details>
+          <details>
+            <summary>National &amp; State Documents</summary>
+            <ul class="list">
+              <li>Advisor Handbook</li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_9336bac81b9e435294a3c8660b9c64e0.pdf" target="_blank" rel="noreferrer">Code of Conduct</a></li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_8a59d8cd290d4fd880a03621b5b73d23.pdf" target="_blank" rel="noreferrer">2024 Revised Constitution and Bylaws</a></li>
+              <li>Directory 2021-2022 Under Review</li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_306090719b7e4b4ca0e28bb9f32dce32.pdf" target="_blank" rel="noreferrer">National SkillsUSA Championship 24-26 General Regulations</a></li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_6d50bcead12740558c93b7fb9d0d28a1.pdf" target="_blank" rel="noreferrer">National SkillsUSA Championship 24-25 Clothing Classifications</a></li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_be6b42f3f4674e9db677443c7001ffdf.pdf" target="_blank" rel="noreferrer">2026 Board Member Application</a></li>
+              <li>2025 Courtesy Corps Application</li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_805b8601edf9431a90962cbfb73c0406.pdf" target="_blank" rel="noreferrer">2026 - 2027 State Officer Candidate Application</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>SLSC Documents &amp; Forms</summary>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_c56b664e55cf42229298e5a729a9ce4d.pdf" target="_blank" rel="noreferrer">Advisor Checklist 2025</a></li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_c56b664e55cf42229298e5a729a9ce4d.pdf" target="_blank" rel="noreferrer">Conference Attire</a></li>
+              <li>2025 Hershey Housing Form</li>
+              <li>Hershey Lodge Credit Card Application</li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_7b308188704d419899efa04feb444cc1.pdf" target="_blank" rel="noreferrer">2025 Liability Release Form / Email Page 3 to Director if needed by March 1st</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Partnerships &amp; Delegate Info</summary>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_18f7b6bdc55c45fca73397d505b5a4d5.pdf" target="_blank" rel="noreferrer">Partnership Opportunities Fill Form</a></li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_399a99de32f54e71997f2150172873e6.pdf" target="_blank" rel="noreferrer">General Info &amp; Delegate Info</a></li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_d2c978b96fe94a12a3f45d24f1b35fcf.pdf" target="_blank" rel="noreferrer">PA State Offered Competitions Explained - Updated 9/1/24</a></li>
+              <li>Tentative SLSC Schedule 2023-2024</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Pin Design Opportunities</summary>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_638189f9de3c4a42bf2f5d493af09a14.pdf" target="_blank" rel="noreferrer">District and State Pin Design for NLSC</a></li>
+              <li><a href="https://www.skillsusapa.org/_files/ugd/13c980_a496df0604374fd6a11fd6bd7ab767fc.pdf" target="_blank" rel="noreferrer">PA State Trading Pin Contest</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Additional Resources</summary>
+            <ul class="list">
+              <li>National Officer Candidate Application</li>
+              <li>PA Alumni Membership Application</li>
+              <li><a href="mailto:dodieamigh@skillsusapa.org">Contact the State Director</a></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="state-officers">
+      <div class="container">
+        <div class="section-title">
+          <h2>PA State Officers</h2>
+          <p>State Officer Team for 2025 ~ 2026</p>
+        </div>
+        <div class="gallery-grid">
+          <img src="https://static.wixstatic.com/media/13c980_48f952a8c75c4e3cac596d80ad133138~mv2.jpeg/v1/crop/x_0,y_0,w_1284,h_730/fill/w_640,h_360,al_c,q_80/IMG_4861.jpeg" alt="SkillsUSA PA State Officers" />
+          <img src="https://static.wixstatic.com/media/13c980_3031b7e031724f4abec10eb63c871302~mv2.jpeg/v1/crop/x_487,y_58,w_512,h_721/fill/w_640,h_800,al_c,q_80/IMG_4859.jpeg" alt="SkillsUSA student leader" />
+          <img src="https://static.wixstatic.com/media/13c980_2929ec5754f64d73ad494512102ca79b~mv2.jpeg/v1/crop/x_72,y_32,w_1140,h_1611/fill/w_640,h_800,al_c,q_80/IMG_4860.jpeg" alt="SkillsUSA student leader in uniform" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="state-initiative">
+      <div class="container">
+        <div class="section-title">
+          <h2>SkillsUSA Pennsylvania State Initiative</h2>
+          <p>2025 - 2026 Initiative</p>
+        </div>
+        <div class="card">
+          <p>This year’s theme is “Champion Your Future” and it encompasses what we've been striving for with Team PA.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="state-director">
+      <div class="container">
+        <div class="section-title">
+          <h2>State Director</h2>
+          <p>My name is Dodie Amigh, and it's been the thrill of lifetime serving as your SkillsUSA Pennsylvania Executive Director.</p>
+        </div>
+        <div class="card">
+          <h3>Where it all began</h3>
+          <p>I joined VICA in 1987 and I haven’t removed the red jacket since. I was in Washington DC when we officially changed the name to SkillsUSA. I celebrated the 25th and the 50th Anniversary with a team of exceptional advisors and mentors. My passion for this organization is tireless and unwavering.</p>
+          <div class="section-divider"></div>
+          <h3>My personal life</h3>
+          <p>My family at home discovered if they wanted to be part of my world, then the SkillsUSA family would become part of their lives. My husband, Paul, served as a SkillsUSA Advisor for many years. Truth be told, he has more student National medals under his tutelage than I do. Our daughter, Devyn, earned a National Gold Medal, served as a two-time State Officer, and now works with Skills JAM. They discovered their own path in this incredible organization. It’s been a family affair. Surprising to most people, we also have a son, Brandon. He never wore a red jacket, but he too embraced the devotion of serving our community in his career. We are a family of servant leaders.</p>
+          <div class="section-divider"></div>
+          <h3>My priorities in this role</h3>
+          <p>My number one priority will always be the student members. I believe that if the advisors are informed and happy, the students will be too. Together we will build on the existing legacy of SkillsUSA Pennsylvania. Loyalty, integrity, transparency, and respect for one another - even when we disagree - are very important to me. I hope you all feel the same. I look forward to this opportunity to serve you. All I ask is for patience and a desire to work towards a common goal ~ the success of our members.</p>
+          <p>This year’s theme is “Champion Your Future” and it encompasses what we've been striving for with Team PA! Together as one, we celebrate our rich and productive history and continue marching towards success.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="site-directory">
+      <div class="container">
+        <div class="section-title">
+          <h2>Site Directory</h2>
+          <p>Browse the full list of SkillsUSA PA sections and resources.</p>
+        </div>
+        <div class="directory-grid">
+          <div class="directory-card">
+            <h3>Advisors</h3>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/advisors" target="_blank" rel="noreferrer">Advisors</a></li>
+              <li><a href="https://www.skillsusapa.org/advisors" target="_blank" rel="noreferrer">2025 Advisor Training Opportunites</a></li>
+              <li><a href="https://www.skillsusapa.org/alerts" target="_blank" rel="noreferrer">Alerts</a></li>
+              <li><a href="https://www.skillsusapa.org/advisors" target="_blank" rel="noreferrer">Absorb &amp; Pathful</a></li>
+              <li><a href="https://www.skillsusapa.org/advisors" target="_blank" rel="noreferrer">Advisor Training</a></li>
+              <li><a href="https://www.skillsusapa.org/advisors" target="_blank" rel="noreferrer">Downloadable Forms</a></li>
+              <li><a href="https://www.skillsusapa.org" target="_blank" rel="noreferrer">State Officer Initiative</a></li>
+              <li><a href="https://www.skillsusapa.org/proof-of-training" target="_blank" rel="noreferrer">Proof of Training Forms</a></li>
+              <li><a href="https://www.skillsusapa.org/advisors" target="_blank" rel="noreferrer">Friday Flash</a></li>
+            </ul>
+          </div>
+          <div class="directory-card">
+            <h3>Students</h3>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/students" target="_blank" rel="noreferrer">Students</a></li>
+              <li><a href="https://www.skillsusapa.org/skillsausa-pa-alumni" target="_blank" rel="noreferrer">SkillsaUSA Alumni</a></li>
+              <li><a href="https://www.skillsusapa.org/students" target="_blank" rel="noreferrer">Scholarships</a></li>
+              <li><a href="https://www.skillsusapa.org/students" target="_blank" rel="noreferrer">State Officer Application</a></li>
+              <li><a href="https://www.skillsusapa.org" target="_blank" rel="noreferrer">State Officer Initiative</a></li>
+            </ul>
+          </div>
+          <div class="directory-card">
             <h3>Membership</h3>
-            <p>Enroll students, advisors, and alumni to unlock competitions and scholarships.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">🏆</div>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/membership" target="_blank" rel="noreferrer">Membership</a></li>
+              <li><a href="https://www.skillsusapa.org/membership" target="_blank" rel="noreferrer">How to Enroll Students</a></li>
+              <li><a href="https://www.skillsusapa.org/membership" target="_blank" rel="noreferrer">SkillsUSA National Website</a></li>
+            </ul>
+          </div>
+          <div class="directory-card">
+            <h3>Fall Leadership</h3>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/fallleadership" target="_blank" rel="noreferrer">Fall Leadership</a></li>
+              <li><a href="https://www.skillsusapa.org/fallleadership" target="_blank" rel="noreferrer">Western Region</a></li>
+              <li><a href="https://www.skillsusapa.org/fallleadership" target="_blank" rel="noreferrer">Central Region</a></li>
+              <li><a href="https://www.skillsusapa.org/fallleadership" target="_blank" rel="noreferrer">District 2</a></li>
+              <li><a href="https://www.skillsusapa.org/fallleadership" target="_blank" rel="noreferrer">District 11</a></li>
+            </ul>
+          </div>
+          <div class="directory-card">
             <h3>Districts</h3>
-            <p>Plan your local district events with clear timelines and support resources.</p>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">Districts</a></li>
+              <li><a href="https://www.skillsusapa.org/registration" target="_blank" rel="noreferrer">DLS</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 1</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 2</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 3</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 4</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 5</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 6</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 7</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 8</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 9</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 10</a></li>
+              <li><a href="https://www.skillsusapa.org/districts" target="_blank" rel="noreferrer">District 11</a></li>
+            </ul>
+          </div>
+          <div class="directory-card">
+            <h3>States</h3>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">States</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">State Offered Competitions</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Tentative Agenda</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Checklist</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">PDT Instructions</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Resume Upload</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Proof of Training Upload</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Competition Scopes</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Contest Status</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">House of Delegates</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Downloads</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">SLSC Clothing</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Champions At Play</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">Cosmetology Cluster Presentation</a></li>
+              <li><a href="https://www.skillsusapa.org/states" target="_blank" rel="noreferrer">CNC Programmer Exam Login</a></li>
+            </ul>
+          </div>
+          <div class="directory-card">
+            <h3>Nationals</h3>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/nationals" target="_blank" rel="noreferrer">Nationals</a></li>
+              <li><a href="https://www.skillsusapa.org/nlsc-rooming" target="_blank" rel="noreferrer">NLSC Rooming</a></li>
+              <li><a href="https://www.skillsusapa.org/skillsusa-region-1" target="_blank" rel="noreferrer">SkillsUSA Region 1 Summit</a></li>
+              <li><a href="https://www.skillsusapa.org/nationals" target="_blank" rel="noreferrer">SkillsUSA National Website</a></li>
+              <li><a href="https://www.skillsusapa.org/nationals" target="_blank" rel="noreferrer">Checklist</a></li>
+              <li><a href="https://www.skillsusapa.org/nationals" target="_blank" rel="noreferrer">Travel</a></li>
+            </ul>
+          </div>
+          <div class="directory-card">
+            <h3>About Us</h3>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/about" target="_blank" rel="noreferrer">About Us</a></li>
+              <li><a href="https://www.skillsusapa.org/about" target="_blank" rel="noreferrer">History of PA</a></li>
+              <li><a href="https://www.skillsusapa.org/about" target="_blank" rel="noreferrer">State Officers</a></li>
+              <li><a href="https://www.skillsusapa.org/about" target="_blank" rel="noreferrer">Board of Directors</a></li>
+              <li><a href="https://www.skillsusapa.org/about" target="_blank" rel="noreferrer">State Staff</a></li>
+              <li><a href="https://www.skillsusapa.org/about" target="_blank" rel="noreferrer">By Laws</a></li>
+              <li><a href="https://www.skillsusapa.org/about" target="_blank" rel="noreferrer">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="directory-card">
+            <h3>Gallery</h3>
+            <ul class="list">
+              <li><a href="https://www.skillsusapa.org/gallery" target="_blank" rel="noreferrer">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>By Mail</h3>
+            <p>373 Edna Street</p>
+            <p>Hollidaysburg, PA 16648</p>
           </article>
+          <article class="card">
+            <h3>Phone</h3>
+            <p>Monday - Friday 9:00 AM ~ 4:00 PM</p>
+            <p>(814) 312-4924</p>
+          </article>
+          <article class="card">
+            <h3>E-Mail</h3>
+            <p><a class="text-link" href="mailto:dodieamigh@skillsusapa.org">dodieamigh@skillsusapa.org</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-title">
+          <h2>Gallery</h2>
+        </div>
+        <div class="gallery-grid">
+          <img src="https://static.wixstatic.com/media/13c980_48f952a8c75c4e3cac596d80ad133138~mv2.jpeg/v1/crop/x_0,y_0,w_1284,h_730/fill/w_640,h_360,al_c,q_80/IMG_4861.jpeg" alt="SkillsUSA Pennsylvania gallery highlight" />
+          <img src="https://static.wixstatic.com/media/13c980_3031b7e031724f4abec10eb63c871302~mv2.jpeg/v1/crop/x_487,y_58,w_512,h_721/fill/w_640,h_800,al_c,q_80/IMG_4859.jpeg" alt="SkillsUSA Pennsylvania student" />
+          <img src="https://static.wixstatic.com/media/13c980_2929ec5754f64d73ad494512102ca79b~mv2.jpeg/v1/crop/x_72,y_32,w_1140,h_1611/fill/w_640,h_800,al_c,q_80/IMG_4860.jpeg" alt="SkillsUSA Pennsylvania event" />
         </div>
       </div>
     </section>
@@ -182,12 +474,12 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li>Email: info@skillsusapa.org</li>
-          <li>Phone: (717) 555-0110</li>
+          <li>Email: dodieamigh@skillsusapa.org</li>
+          <li>Phone: (814) 312-4924</li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 SkillsUSA Pennsylvania. All rights reserved.</div>
+    <div class="footer-bottom">© 2025 SkillsUSA Pennsylvania. All rights reserved.</div>
   </footer>
 
   <script src="assets/js/main.js"></script>
