@@ -4,12 +4,70 @@ const storageKeys = {
 };
 
 const navToggle = document.querySelector("[data-nav-toggle]");
-if (navToggle) {
+const navLinks = document.getElementById("primary-menu");
+const navContainer = document.querySelector(".navbar");
+
+const closeMenu = () => {
+  document.body.classList.remove("nav-open");
+  if (navToggle) {
+    navToggle.setAttribute("aria-expanded", "false");
+  }
+  if (navLinks) {
+    navLinks.setAttribute("aria-hidden", "true");
+  }
+};
+
+const openMenu = () => {
+  document.body.classList.add("nav-open");
+  if (navToggle) {
+    navToggle.setAttribute("aria-expanded", "true");
+  }
+  if (navLinks) {
+    navLinks.setAttribute("aria-hidden", "false");
+  }
+};
+
+if (navToggle && navLinks) {
+  navLinks.setAttribute("aria-hidden", "true");
   navToggle.addEventListener("click", () => {
-    const isOpen = document.body.classList.toggle("nav-open");
-    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    const isOpen = document.body.classList.contains("nav-open");
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  navLinks.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      closeMenu();
+    }
   });
 }
+
+document.addEventListener("click", (event) => {
+  if (!document.body.classList.contains("nav-open")) return;
+  if (navContainer && !navContainer.contains(event.target)) {
+    closeMenu();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && document.body.classList.contains("nav-open")) {
+    closeMenu();
+  }
+});
+
+const backButtons = document.querySelectorAll("[data-back]");
+backButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = "index.html";
+    }
+  });
+});
 
 const countdown = document.querySelector("[data-countdown]");
 if (countdown) {
