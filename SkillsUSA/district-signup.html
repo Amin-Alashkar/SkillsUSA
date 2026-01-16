@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillsUSA Pennsylvania | District Signup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <img src="https://static.wixstatic.com/media/6a1a55_6a632ed852fa4c26a10519b89293c35c%7Emv2.jpg/v1/fill/w_96,h_96,lg_1,usm_0.66_1.00_0.01/6a1a55_6a632ed852fa4c26a10519b89293c35c%7Emv2.jpg" alt="SkillsUSA Pennsylvania logo" />
+        <span>
+          <strong>SkillsUSA</strong>
+          <span class="brand-subtitle">Pennsylvania</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <div class="nav-links" id="primary-menu">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="create-account.html">Create Account</a>
+        <a class="button button-outline is-active" href="district-signup.html">District Signup</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Districts</p>
+        <h1>District signup form</h1>
+        <p class="lead">Tell us about your district event so we can support scheduling, staffing, and resources.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="form-wrapper">
+          <aside class="form-sidebar">
+            <h2>Signup steps</h2>
+            <ol class="stepper" data-stepper>
+              <li class="is-active" data-step="1">District details</li>
+              <li data-step="2">Advisor contacts</li>
+              <li data-step="3">Event logistics</li>
+            </ol>
+            <p class="helper">Each step saves automatically on submit. You can update later if needed.</p>
+          </aside>
+
+          <form id="district-form" class="form-card" novalidate>
+            <fieldset class="form-step is-active" data-step="1">
+              <legend>District details</legend>
+              <div class="field">
+                <label for="district-name">District name</label>
+                <input id="district-name" name="districtName" type="text" required />
+                <small class="hint">Example: District 6 - Central Region</small>
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="district-number">District number</label>
+                <select id="district-number" name="districtNumber" required>
+                  <option value="">Select district</option>
+                  <option>District 1</option>
+                  <option>District 2</option>
+                  <option>District 3</option>
+                  <option>District 4</option>
+                  <option>District 5</option>
+                  <option>District 6</option>
+                  <option>District 7</option>
+                  <option>District 8</option>
+                  <option>District 9</option>
+                  <option>District 10</option>
+                  <option>District 11</option>
+                </select>
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="hosting-school">Hosting school</label>
+                <input id="hosting-school" name="hostingSchool" type="text" autocomplete="organization" required />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="district-county">County / Region</label>
+                <input id="district-county" name="county" type="text" required />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-step" data-step="2">
+              <legend>Advisor contacts</legend>
+              <div class="field">
+                <label for="lead-advisor">Lead advisor name</label>
+                <input id="lead-advisor" name="leadAdvisor" type="text" autocomplete="name" required />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="advisor-email">Lead advisor email</label>
+                <input id="advisor-email" name="advisorEmail" type="email" autocomplete="email" required />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="advisor-phone">Lead advisor phone</label>
+                <input id="advisor-phone" name="advisorPhone" type="tel" autocomplete="tel" required />
+                <small class="hint">Use a mobile number for day-of updates.</small>
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="secondary-contact">Secondary contact (optional)</label>
+                <input id="secondary-contact" name="secondaryContact" type="text" autocomplete="name" />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-step" data-step="3">
+              <legend>Event logistics</legend>
+              <div class="field">
+                <label for="event-date">Proposed event date</label>
+                <input id="event-date" name="eventDate" type="date" required />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="event-location">Event location address</label>
+                <input id="event-location" name="eventLocation" type="text" autocomplete="street-address" required />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="student-count">Estimated student competitors</label>
+                <input id="student-count" name="studentCount" type="number" min="10" step="1" required />
+                <small class="hint">Approximate count to support staffing.</small>
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="needs">District needs / notes</label>
+                <textarea id="needs" name="needs" rows="4" placeholder="Judges, equipment, facility notes, etc."></textarea>
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+            </fieldset>
+
+            <div class="form-navigation">
+              <button class="button button-secondary" type="button" data-step-prev>Back</button>
+              <button class="button" type="button" data-step-next>Continue</button>
+              <button class="button" type="submit" data-step-submit>Submit district signup</button>
+            </div>
+            <div class="alert" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+
+        <div class="success-panel" id="district-success" hidden>
+          <h2>District signup submitted!</h2>
+          <p>Thanks for supporting SkillsUSA Pennsylvania. We saved your submission locally for demo purposes.</p>
+          <p class="success-detail">You can update details at any time or contact us with questions.</p>
+          <a class="button" href="index.html">Return to home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>SkillsUSA Pennsylvania</h3>
+        <p>Empowering students to become skilled professionals, career-ready leaders, and responsible citizens.</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/skillsusapennsylvania" target="_blank" rel="noreferrer">Facebook</a></li>
+          <li><a href="https://www.instagram.com/teampaskillsusa" target="_blank" rel="noreferrer">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: info@skillsusapa.org</li>
+          <li>Phone: (717) 555-0110</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 SkillsUSA Pennsylvania. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
