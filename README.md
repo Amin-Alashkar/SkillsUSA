@@ -33,4 +33,3 @@ All flows are front-end only using `localStorage`:
 - Softened SkillsUSA red as the primary brand color.
 - Reusable components for buttons, cards, inputs, alerts, navbar, and footer.
 - Accessible focus states, labels, and responsive layouts optimized for mobile-first usage.
-assets/css/styl
